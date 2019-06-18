@@ -1,0 +1,532 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.2rem;
+
+}
+
+/*Fonts*/
+
+/*Navn*/
+/*font-family: 'Julius Sans One', sans-serif;*/
+/*Overskrift*/
+/*font-family: 'Prata', serif;*/
+/*Tekst*/
+/*font-family: 'Arapey', serif;*/
+
+h2 {
+    font-family: 'Prata', serif;
+}
+
+h3 {
+    font-family: 'Prata', serif;
+}
+
+p {
+    font-family: 'Arapey', serif;
+}
+
+/*Slideshow*/
+
+slider {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    object-fit: cover;
+}
+
+slider > * {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #1f1f1f;
+    animation: slide 12s infinite;
+    overflow: hidden;
+}
+
+slide:nth-child(1) {
+    left: 0%;
+    animation-delay: -1s;
+    background-size: cover;
+    background-position: center;
+}
+
+slide:nth-child(2) {
+    animation-delay: 2s;
+    background-size: cover;
+    background-position: center;
+}
+
+slide:nth-child(3) {
+    animation-delay: 5s;
+    background-size: cover;
+    background-position: center;
+}
+
+slide:nth-child(4) {
+    left: 0%;
+    animation-delay: 8s;
+    background-size: cover;
+    background-position: center;
+}
+
+slide p {
+    /*    font-family: Comfortaa;*/
+    font-size: 70px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-top: 340px;
+    color: #fff;
+}
+
+@keyframes slide {
+    0% {
+        left: 100%;
+        width: 100%;
+    }
+
+    5% {
+        left: 0%;
+    }
+
+    25% {
+        left: 0%;
+    }
+
+    30% {
+        left: -100%;
+        width: 100%;
+    }
+
+    30.0001% {
+        left: -100%;
+        width: 0%;
+    }
+
+    100% {
+        left: 100%;
+        width: 0%;
+    }
+}
+
+/*Menu*/
+
+#header {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 30vw;
+    position: relative;
+
+}
+
+
+.navn {
+    display: flex;
+    flex-wrap: wrap;
+
+    position: absolute;
+    color: white;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 4vw;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+
+
+    align-items: center;
+    justify-content: space-around;
+    /*    border-bottom: solid 1px black;*/
+    width: 100%;
+
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: #8e8e8e;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    font-family: 'Arapey', serif;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 41%, rgba(255, 255, 255, 0.75) 76%, rgba(255, 255, 255, 0) 100%);
+    z-index: 1000;
+
+
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    color: black;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.active {
+    color: black;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/*Omkring*/
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 30px 20px 20px;
+}
+
+.container .tekst {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    font-family: 'Prata', serif;
+    /*    text-decoration: underline;*/
+}
+
+.container img {
+    height: 300px;
+    width: 300px;
+
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+
+.tekstcontainer {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.tekst {
+    width: 300px;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0px 20px;
+
+    font-family: 'Arapey', serif;
+}
+
+
+/*Fotter*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    font-size: 0.9rem;
+    color: #c7c7c7;
+    text-align: center;
+    margin: 40px 20px;
+    font-family: 'Arapey', serif;
+    ;
+}
+
+/*About*/
+
+#about {
+    display: flex;
+    /*    flex-wrap: wrap;*/
+    flex-direction: column;
+    align-items: center;
+
+    padding: 50px;
+}
+
+
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+
+}
+
+
+.tekstboks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+
+}
+
+@media only screen and (min-width: 800px) {
+    #about {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .image {
+        flex-grow: 1;
+        position: sticky;
+        top: 10vw;
+        align-self: flex-start;
+        padding: 20px;
+        flex-basis: 500px;
+    }
+
+    .tekstboks {
+        flex-grow: 1;
+        flex-basis: 500px;
+        justify-content: flex-start;
+    }
+
+    .bread {
+        width: 400px;
+        text-align: left;
+    }
+}
+
+
+/*Web*/
+
+#web {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.site {
+    padding: 20px;
+    width: 400px;
+}
+
+.arts_image {
+    height: 200px;
+    width: 400px;
+    background-image: url(img/arts.png);
+    background-size: cover;
+}
+
+/*Animation*/
+
+#animation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.spil {
+    padding: 20px;
+    width: 400px;
+}
+
+.shark_image {
+    height: 200px;
+    width: 400px;
+    background-image: url(img/Sharktub.png);
+    background-size: cover;
+}
+
+.privat_image {
+    height: 200px;
+    width: 400px;
+    background-image: url(img/Privatsnak.png);
+    background-size: cover;
+}
+
+/*Content*/
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.site {
+    padding: 20px;
+    width: 400px;
+}
+
+.aabenbar_image {
+    height: 200px;
+    width: 400px;
+    background-image: url(img/aabenbar.png);
+    background-size: cover;
+}
+
+
+/*UX*/
+
+#ux {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.site {
+    padding: 20px;
+    width: 400px;
+}
+
+.fronter_image {
+    height: 400px;
+    width: 400px;
+    background-image: url(img/fronter.png);
+    background-size: cover;
+    border-radius: 20%;
+    border: solid 1px #d3d3d3;
+}
+
+.groops_image {
+    height: 400px;
+    width: 400px;
+    background-image: url(img/logo.png);
+    background-size: cover;
+    border-radius: 20%;
+}
+
+
+/*Boks Menu*/
+
+#box {
+    padding: 15px 0px 20px;
+    position: relative;
+}
+
+#box.lille {
+    overflow: hidden;
+    max-height: 100px;
+}
+
+#box.stor {
+    max-height: 4000px;
+}
+
+#mere {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#mere .plus {
+    background: white;
+    width: 20px;
+    height: 20px;
+    color: red;
+    text-align: center;
+    display: inline-block;
+    margin-top: 40px;
+}
+
+#box.lille span::after {
+    content: "+";
+}
+
+#box.stor span::after {
+    content: "-";
+}
+
+.hvid_overlay {
+    height: 60px;
+    background: linear-gradient(rgba(255, 210, 0, 0), rgb(255, 255, 255));
+
+}
+
+
+/*Music*/
+
+#music {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/*Tropical*/
+
+.tropical {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.alejandro_image {
+    height: 400px;
+    width: 400px;
+    border: solid 1px rgb(132, 107, 38);
+    background-image: url(img/Alejandro.jpg);
+    background-size: cover;
+}
+
+/*Deep House*/
+
+.deep_house {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+/*EDM*/
+
+.edm {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
