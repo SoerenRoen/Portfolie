@@ -5,6 +5,11 @@ body {
 
 }
 
+figure {
+    padding: 0px;
+    margin: 0px;
+}
+
 /*Fonts*/
 
 /*Navn*/
@@ -36,6 +41,8 @@ slider {
     position: absolute;
     object-fit: cover;
 }
+
+/*Lånt fra nettet*/
 
 slider > * {
     position: absolute;
@@ -179,6 +186,7 @@ nav {
 li a:hover,
 .dropdown:hover .dropbtn {
     color: black;
+    cursor: pointer;
 }
 
 li.dropdown {
@@ -437,21 +445,21 @@ footer {
 
 /*Boks Menu*/
 
-#box {
+.box {
     padding: 15px 0px 20px;
     position: relative;
 }
 
-#box.lille {
+.box.lille {
     overflow: hidden;
     max-height: 100px;
 }
 
-#box.stor {
+.box.stor {
     max-height: 4000px;
 }
 
-#mere {
+.mere {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -459,7 +467,7 @@ footer {
     text-align: center;
 }
 
-#mere .plus {
+.mere .plus {
     background: white;
     width: 20px;
     height: 20px;
@@ -469,11 +477,11 @@ footer {
     margin-top: 40px;
 }
 
-#box.lille span::after {
+.box.lille span::after {
     content: "+";
 }
 
-#box.stor span::after {
+.box.stor span::after {
     content: "-";
 }
 
